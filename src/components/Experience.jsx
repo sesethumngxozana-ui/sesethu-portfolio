@@ -9,7 +9,7 @@ function Experience() {
           <div className="timeline-content">
             <span className="timeline-date">2026 — current</span>
             <h3>Frontend Developer</h3>
-            <p className="timeline-place">ERA Gateway · YES Programme</p>
+            <p className="timeline-place">Eragateway · YES Programme</p>
             <p>Building real applications with React, TypeScript, CSS, Java and Kotlin. Contributing to production projects in a professional development environment.</p>
           </div>
         </div>

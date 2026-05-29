@@ -31,14 +31,17 @@ function Projects() {
           </div>
         </div>
 
-        <div className="project-card">
-          <h3>UFS Recruitment System</h3>
-          <p>Designed and documented a full digital recruitment platform — 16 use cases, UML diagrams, AI-assisted CV builder concept, and skill gap analysis tool. Achieved 82%.</p>
-          <div className="project-tags">
-            <span className="tag">Systems Analysis</span>
-            <span className="tag">UML</span>
-            <span className="tag">Requirements Engineering</span>
-          </div>
+         <div className="project-card">
+            <h3>UFS Recruitment System</h3>
+            <p>Designed and documented a full digital recruitment platform — 16 use cases, UML diagrams, AI-assisted CV builder concept, and skill gap analysis tool. Achieved 82%.</p>
+            <div className="project-tags">
+                <span className="tag">Systems Analysis</span>
+                <span className="tag">UML</span>
+                <span className="tag">Requirements Engineering</span>
+            </div>
+            <div className="project-links">
+                <a href="https://github.com/sesethumngxozana-ui/ufs-recruitment-system" target="_blank">GitHub</a>
+            </div>
         </div>
 
         <div className="project-card coming-soon">
