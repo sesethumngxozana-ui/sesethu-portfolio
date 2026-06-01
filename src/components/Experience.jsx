@@ -47,10 +47,10 @@ function Experience() {
         <div className="timeline-item">
           <div className="timeline-dot"></div>
           <div className="timeline-content">
-            <span className="timeline-date">2026 — upcoming</span>
+            <span className="timeline-date">2027 — upcoming</span>
             <h3>BCom Honours — Information Systems</h3>
-            <p className="timeline-place">University of the Free State</p>
-            <p>Provisionally accepted. Specialising in IS and Business Management.</p>
+            <p className="timeline-place">Any Potential University </p>
+            <p>Specialising in IS and Business Management.</p>
           </div>
         </div>
 

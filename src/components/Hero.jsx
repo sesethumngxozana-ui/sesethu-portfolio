@@ -1,10 +1,13 @@
+import profilePhoto from '../assets/profile.jpg'
 function Hero() {
   return (
     <section className="hero" id="home">
+      <div className="hero-right">
       <div className="hero-badge">
         <span className="badge-dot"></span>
         Available for opportunities
       </div>
+      
       <p className="hero-greeting">Hi, I'm</p>
       <h1>Sesethu<br/>Mngxozana</h1>
       <p className="hero-sub">
@@ -17,6 +20,12 @@ function Hero() {
       <div className="hero-buttons">
         <a href="#projects" className="btn btn-primary">View my work</a>
         <a href="#contact" className="btn btn-secondary">Get in touch</a>
+      </div>
+      </div>
+      <div className="hero-inner">
+        <div className="hero-photo">
+          <img src={profilePhoto} alt="Sesethu Mngxozana at UFS graduation" />
+        </div>
       </div>
     </section>
   )

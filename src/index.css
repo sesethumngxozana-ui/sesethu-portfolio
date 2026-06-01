@@ -66,11 +66,11 @@ body {
 /* ── HERO ── */
 .hero {
   min-height: 90vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  align-items: center;
   padding: 4rem 2rem;
-  max-width: 800px;
+  max-width: 1000px; 
   margin: 0 auto;
 }
 
@@ -200,9 +200,16 @@ body {
   padding: 5rem 2rem;
 }
 
+.hero-photo img {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  aspect-ratio: 3/4;
+}
+
 .about-inner {
   display: grid;
-  grid-template-columns: 280px 1fr;
+  grid-template-columns: 1fr 280px;
   gap: 4rem;
   align-items: start;
   max-width: 1000px;
@@ -227,6 +234,8 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   margin-top: 2rem;
+  max-width: 1000px;
+  margin: 2rem auto 0;
 }
 
 .stat-card {
@@ -249,6 +258,51 @@ body {
 .stat-label {
   font-size: 0.82rem;
   color: var(--text-light);
+}
+
+.mini-resume {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.75rem;
+  position: sticky;
+  top: 80px;
+}
+
+.mini-resume-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-light);
+  margin-bottom: 0.85rem;
+  margin-top: 1.25rem;
+}
+
+.mini-resume-title:first-child {
+  margin-top: 0;
+}
+
+.mini-resume-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.mini-resume-list li {
+  font-size: 0.9rem;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.mr-icon {
+  font-size: 1rem;
+  width: 20px;
+  text-align: center;
+  flex-shrink: 0;
 }
 
 /* ── SKILLS ── */
@@ -516,6 +570,8 @@ footer {
 @media (max-width: 768px) {
   .hero h1 { font-size: 2.8rem; }
   .hero { padding: 3rem 1.5rem; }
+  .hero { grid-template-columns: 1fr; }
+  .about-photo { order: -1; }
   .about-inner { grid-template-columns: 1fr; }
   .about-photo img { max-width: 220px; margin: 0 auto; display: block; }
   .skills-grid { grid-template-columns: 1fr; }
