@@ -28,7 +28,7 @@ function About() {
                 writing poetry, or helping matrics in my community apply for bursaries 
                 and universities.
               </p>
-          </div>
+          </div> 
           <div className="about-right">
             <div className="mini-resume">
               <h3 className="mini-resume-title">Quick Facts</h3>
