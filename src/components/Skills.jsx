@@ -1,41 +1,60 @@
+import { useState } from 'react'
+
+const allSkills = {
+  frontend: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'Kotlin', 'Java'],
+  data: ['Power BI', 'SQL', 'Excel', 'Git', 'GitHub', 'Figma ✦ learning'],
+  systems: ['Systems Analysis', 'UML', 'Database Design', 'HCI', 'Requirements Engineering'],
+}
+
+const tabs = [
+  { key: 'all', label: 'All Skills' },
+  { key: 'frontend', label: 'Frontend' },
+  { key: 'data', label: 'Data & Tools' },
+  { key: 'systems', label: 'Systems' },
+]
+
 function Skills() {
+  const [active, setActive] = useState('all')
+
+  const getVisible = () => {
+    if (active === 'all') return allSkills
+    return { [active]: allSkills[active] }
+  }
+
+  const groupLabels = { frontend: 'Frontend', data: 'Data & Tools', systems: 'Systems' }
+
   return (
     <section className="skills" id="skills">
       <h2 className="section-title">Skills</h2>
+
+      <div className="skill-tabs">
+        {tabs.map(tab => (
+          <button
+            key={tab.key}
+            className={`skill-tab${active === tab.key ? ' active' : ''}`}
+            onClick={() => setActive(tab.key)}
+          >
+            {tab.label}
+          </button>
+        ))}
+      </div>
+
       <div className="skills-grid">
-        <div className="skill-group">
-          <h3>Frontend</h3>
-          <div className="skill-tags">
-            <span className="tag">HTML</span>
-            <span className="tag">CSS</span>
-            <span className="tag">JavaScript</span>
-            <span className="tag">TypeScript</span>
-            <span className="tag">React</span>
-            <span className="tag">Kotlin</span>
-            <span className="tag">Java</span>
+        {Object.entries(getVisible()).map(([key, skills]) => (
+          <div className="skill-group" key={key}>
+            <h3>{groupLabels[key]}</h3>
+            <div className="skill-tags">
+              {skills.map(skill => (
+                <span
+                  key={skill}
+                  className={`tag${skill.includes('learning') ? ' learning' : ''}`}
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
           </div>
-        </div>
-        <div className="skill-group">
-          <h3>Data & Tools</h3>
-          <div className="skill-tags">
-            <span className="tag">Power BI</span>
-            <span className="tag">SQL</span>
-            <span className="tag">Excel</span>
-            <span className="tag">Git</span>
-            <span className="tag">GitHub</span>
-            <span className="tag learning">Figma ✦ learning</span>
-          </div>
-        </div>
-        <div className="skill-group">
-          <h3>Systems</h3>
-          <div className="skill-tags">
-            <span className="tag">Systems Analysis</span>
-            <span className="tag">UML</span>
-            <span className="tag">Database Design</span>
-            <span className="tag">HCI</span>
-            <span className="tag">Requirements Engineering</span>
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   )

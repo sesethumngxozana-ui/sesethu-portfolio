@@ -9,6 +9,7 @@ function Navbar() {
         <li><a href="#experience">Experience</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <a href="#contact" className="nav-cta">Hire me</a>
     </nav>
   )
 }

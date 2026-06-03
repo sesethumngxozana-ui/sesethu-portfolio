@@ -1,8 +1,8 @@
+import profilePhoto from '../assets/profile.jpg'
 
 function About() {
   return (
     <section className="about" id="about">
-      
       <div className="about-inner">
           <div className="about-left">
             <h2 className="section-title">About Me</h2>
@@ -52,24 +52,24 @@ function About() {
             </div>
           </div>  
       </div>
-              <div className="about-stats">
-                <div className="stat-card">
-                  <span className="stat-number">92%</span>
-                  <span className="stat-label">Programming (UFS)</span>
-                </div>
-                <div className="stat-card">
-                  <span className="stat-number">3</span>
-                  <span className="stat-label">Students mentored</span>
-                </div>
-                <div className="stat-card">
-                  <span className="stat-number">2</span>
-                  <span className="stat-label">Live projects</span>
-                </div>
-                <div className="stat-card">
-                  <span className="stat-number">YES</span>
-                  <span className="stat-label">Programme developer</span>
-                </div>
-              </div>
+      <div className="about-stats">
+            <div className="stat-card">
+              <span className="stat-number">92%</span>
+              <span className="stat-label">Programming (UFS)</span>
+            </div>
+            <div className="stat-card">
+              <span className="stat-number">3</span>
+              <span className="stat-label">Students mentored</span>
+            </div>
+            <div className="stat-card">
+              <span className="stat-number">2</span>
+              <span className="stat-label">Live projects</span>
+            </div>
+            <div className="stat-card">
+              <span className="stat-number">YES</span>
+              <span className="stat-label">Programme developer</span>
+            </div>
+          </div>
     </section>
   )
 }
