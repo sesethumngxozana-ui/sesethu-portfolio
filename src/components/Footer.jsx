@@ -1,3 +1,4 @@
+import { Globe, ZapIcon, BookOpenCheckIcon} from 'lucide-react'
 function Footer() {
   const year = new Date().getFullYear()
 
@@ -40,9 +41,9 @@ function Footer() {
           </div>
           <div className="footer-col">
             <h4>Currently</h4>
-            <span>⚡ Frontend Dev @ Eragateway</span>
-            <span>📚 Honours CIS — UFS 2026</span>
-            <span>🌍 Gauteng, South Africa</span>
+            <span><ZapIcon size={20}/> Frontend Dev @ Eragateway</span>
+            <span><BookOpenCheckIcon size={20}/> Self Taught</span>
+            <span><Globe size={20} /> Gauteng, South Africa</span>
           </div>
         </div>
 
@@ -50,7 +51,7 @@ function Footer() {
 
       <div className="footer-bottom">
         <span>© {year} Sesethu Mngxozana · Built with React & Vite</span>
-        <a href="#home" className="back-to-top">Back to top ↑</a>
+         <a href="#home" className="back-to-top">Back to top ↑</a>
       </div>
     </footer>
   )

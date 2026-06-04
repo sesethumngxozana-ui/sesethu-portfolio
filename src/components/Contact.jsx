@@ -8,7 +8,7 @@ function Contact() {
       </p>
       <div className="contact-links">
         <a href="mailto:sesethumngxozana@gmail.com" className="contact-item">
-          <span className="contact-icon">✉</span>
+          < span className="contact-icon">✉️</span>
           <span>sesethumngxozana@gmail.com</span>
         </a>
         <a href="https://www.linkedin.com/in/sesethu-mngxozana-88b97528b" target="_blank" className="contact-item">
@@ -21,6 +21,8 @@ function Contact() {
         </a>
       </div>
     </section>
+
+    
   )
 }
 

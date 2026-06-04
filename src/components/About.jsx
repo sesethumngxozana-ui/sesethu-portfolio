@@ -1,4 +1,5 @@
 import profilePhoto from '../assets/profile.jpg'
+import { MapPin, GraduationCap, MessageCircle, Briefcase } from 'lucide-react'
 
 function About() {
   return (
@@ -34,10 +35,10 @@ function About() {
               <h3 className="mini-resume-title">Quick Facts</h3>
               
               <ul className="mini-resume-list">
-                <li><span className="mr-icon">📍</span> Gauteng, South Africa</li>
-                <li><span className="mr-icon">🎓</span> BCom CIS — UFS, 2025</li>
-                <li><span className="mr-icon">💼</span> Frontend Dev @ Eragateway</li>
-                <li><span className="mr-icon">🗣️</span> Xhosa · English · Zulu · Sotho</li>
+                <li><MapPin size={20} /> Gauteng, South Africa</li>
+                <li><GraduationCap size={20} /> BCom CIS — UFS, 2025</li>
+                <li><Briefcase size={20} /> Frontend Dev @ Eragateway</li>
+                <li><MessageCircle size={20} /> Xhosa · English · Zulu · Sotho</li>
               </ul>
 
               <h3 className="mini-resume-title">Beyond the Code</h3>

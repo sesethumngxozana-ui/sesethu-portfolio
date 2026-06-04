@@ -807,11 +807,13 @@ html, body {
   color: rgba(255,255,255,0.35);
 }
 .back-to-top {
-  color: rgba(255,255,255,0.5) !important;
+  color: rgba(255,255,255,0.35) !important;
   text-decoration: none;
   transition: color 0.2s !important;
+ 
+
 }
-.back-to-top:hover { color: white !important; }
+.back-to-top:hover { color: rgb(252, 245, 251) !important; }
 
 /* ── RESPONSIVE UPDATES ── */
 @media (max-width: 768px) {
