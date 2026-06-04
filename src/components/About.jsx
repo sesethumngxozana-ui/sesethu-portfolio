@@ -54,19 +54,19 @@ function About() {
           </div>  
       </div>
       <div className="about-stats">
-            <div className="stat-card">
+            <div className="stat-card" data-aos="fade-left">
               <span className="stat-number">92%</span>
               <span className="stat-label">Programming (UFS)</span>
             </div>
-            <div className="stat-card">
+            <div className="stat-card" data-aos="fade-right" data-aos-delay="100">
               <span className="stat-number">3</span>
               <span className="stat-label">Students mentored</span>
             </div>
-            <div className="stat-card">
+            <div className="stat-card" data-aos="fade-left" data-aos-delay="200">
               <span className="stat-number">2</span>
               <span className="stat-label">Live projects</span>
             </div>
-            <div className="stat-card">
+            <div className="stat-card" data-aos="fade-right" data-aos-delay="300">
               <span className="stat-number">YES</span>
               <span className="stat-label">Programme developer</span>
             </div>
